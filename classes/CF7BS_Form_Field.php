@@ -60,9 +60,9 @@ class CF7BS_Form_Field extends CF7BS_Component {
 
 					if ( 'textarea' != $type ) {
 						if ( 'large' == $size ) {
-							$input_class .= ' input-lg';
+							$input_class .= ' form-control-lg';
 						} elseif ( in_array( $size, array( 'small', 'mini' ) ) ) {
-							$input_class .= ' input-sm';
+							$input_class .= ' form-control-sm';
 						}
 					}
 
@@ -406,10 +406,10 @@ class CF7BS_Form_Field extends CF7BS_Component {
 			return $input_class;
 		}
 
-		if ( false !== strpos( $input_class, ' input-lg' ) ) {
-			$input_class = str_replace( ' input-lg', '', $input_class );
-		} elseif ( false !== strpos( $input_class, ' input-sm' ) ) {
-			$input_class = str_replace( ' input-sm', '', $input_class );
+		if ( false !== strpos( $input_class, ' form-control-lg' ) ) {
+			$input_class = str_replace( ' form-control-lg', '', $input_class );
+		} elseif ( false !== strpos( $input_class, ' form-control-sm' ) ) {
+			$input_class = str_replace( ' form-control-sm', '', $input_class );
 		}
 
 		return $input_class;
@@ -421,9 +421,9 @@ class CF7BS_Form_Field extends CF7BS_Component {
 		}
 
 		$input_group_class = 'input-group';
-		if ( false !== strpos( $input_class, ' input-lg') ) {
+		if ( false !== strpos( $input_class, ' form-control-lg') ) {
 			$input_group_class .= ' input-group-lg';
-		} elseif ( false !== strpos( $input_class, ' input-sm') ) {
+		} elseif ( false !== strpos( $input_class, ' form-control-sm') ) {
 			$input_group_class .= ' input-group-sm';
 		}
 
