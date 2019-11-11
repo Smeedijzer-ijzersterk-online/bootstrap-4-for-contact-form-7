@@ -1,5 +1,5 @@
 {
-  "name": "smeedijzer-ijzersterk-online/bootstrap-4-for-contact-form-7",
+  "name": "smeedijzer-internet/bootstrap-4-for-contact-form-7",
   "description": "This plugin modifies the output of the popular Contact Form 7 plugin to be styled in compliance with themes using the Bootstrap CSS framework.",
   "version": "dev-master",
   "license": "GPL-2.0-or-later",
@@ -17,16 +17,16 @@
     "contact form",
     "cf7bs"
   ],
-  "homepage": "https://github.com/Smeedijzer-ijzersterk-online/bootstrap-4-for-contact-form-7",
+  "homepage": "https://github.com/smeedijzer-internet/bootstrap-4-for-contact-form-7",
   "authors": [
     {
       "name": "Smeedijzer",
-      "homepage": "https://github.com/Smeedijzer-ijzersterk-online/",
+      "homepage": "https://github.com/smeedijzer-internet/",
       "role": "Developer"
     }
   ],
   "support": {
-    "issues": "https://github.com/Smeedijzer-ijzersterk-online/bootstrap-4-for-contact-form-7/issues"
+    "issues": "https://github.com/smeedijzer-internet/bootstrap-4-for-contact-form-7/issues"
   },
   "require": {
     "composer/installers": "~1.0"
