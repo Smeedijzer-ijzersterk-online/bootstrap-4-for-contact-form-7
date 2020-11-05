@@ -109,7 +109,7 @@ function cf7bs_inline_styles() {
 		?>
 		<style type="text/css">
 			div.wpcf7 .ajax-loader {
-				background-image: url('<?php echo $url . '/images/ajax-loader.gif'; ?>');
+				background-image: url('<?php echo $url . '/assets/ajax-loader.gif'; ?>');
 			}
 		</style>
 		<?php
@@ -136,7 +136,7 @@ function cf7bs_inline_styles() {
 		div.wpcf7 .ajax-loader {
 			visibility: hidden;
 			display: inline-block;
-			background-image: url('<?php echo $url . '/images/ajax-loader.gif'; ?>');
+			background-image: url('<?php echo $url . '/assets/ajax-loader.gif'; ?>');
 			width: 16px;
 			height: 16px;
 			border: none;
