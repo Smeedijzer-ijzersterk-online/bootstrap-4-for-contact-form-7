@@ -1,3 +1,5 @@
+This is a fork implementing some fixes to keep it functional.
+
 Bootstrap for Contact Form 7
 ============================
 
