@@ -9,7 +9,7 @@ form.submitting .wpcf7-response-output {
 	display: none;
 }
 
-div.wpcf7 .screen-reader-response {
+.wpcf7 .screen-reader-response {
 	position: absolute;
 	width: 1px;
 	height: 1px;
@@ -20,15 +20,15 @@ div.wpcf7 .screen-reader-response {
 	border: 0;
 }
 
-div.wpcf7 .form-inline img.ajax-loader {
+.wpcf7 .form-inline img.ajax-loader {
 	display: inline;
 }
 
-div.wpcf7 .form-inline .form-group {
+.wpcf7 .form-inline .form-group {
 	max-width: 250px;
 }
 
-div.wpcf7 .ajax-loader {
+.wpcf7 .ajax-loader {
 	display: inline-block;
 	width: 16px;
 	height: 16px;
@@ -38,40 +38,40 @@ div.wpcf7 .ajax-loader {
 	border: none;
 	visibility: hidden;
 }
-div.wpcf7 .ajax-loader.is-active {
+.wpcf7 .ajax-loader.is-active {
 	visibility: visible;
 }
 
-div.wpcf7 div.ajax-error {
+.wpcf7 div.ajax-error {
 	display: none;
 }
 
-div.wpcf7 .wpcf7-display-none {
+.wpcf7 .wpcf7-display-none {
 	display: none;
 }
 
-div.wpcf7 .placeheld {
+.wpcf7 .placeheld {
 	color: #888;
 }
 
-div.wpcf7 .wpcf7-recaptcha iframe {
+.wpcf7 .wpcf7-recaptcha iframe {
 	margin-bottom: 0;
 }
 
-div.wpcf7 input[type="file"] {
+.wpcf7 input[type="file"] {
 	cursor: pointer;
 }
-div.wpcf7 input[type="file"]:disabled {
+.wpcf7 input[type="file"]:disabled {
 	cursor: default;
 }
 
-div.wpcf7 .input-group-addon img {
+.wpcf7 .input-group-addon img {
 	width: auto;
 	height: 100%;
 	max-width: none !important;
 	border-radius: 5px;
 }
 
-div.wpcf7 .input-group-addon.input-group-has-image {
+.wpcf7 .input-group-addon.input-group-has-image {
 	padding: 0;
 }

@@ -108,7 +108,7 @@ function cf7bs_inline_styles() {
 	if ( version_compare( CF7BS_VERSION, '1.4.8', '>=' ) ) {
 		?>
 		<style type="text/css">
-			div.wpcf7 .ajax-loader {
+			.wpcf7 .ajax-loader {
 				background-image: url('<?php echo $url . '/assets/ajax-loader.gif'; ?>');
 			}
 		</style>
@@ -118,7 +118,7 @@ function cf7bs_inline_styles() {
 
 	?>
 	<style type="text/css">
-		div.wpcf7 .screen-reader-response {
+		.wpcf7 .screen-reader-response {
 			position: absolute;
 			overflow: hidden;
 			clip: rect(1px, 1px, 1px, 1px);
@@ -129,11 +129,17 @@ function cf7bs_inline_styles() {
 			border: 0;
 		}
 
-		div.wpcf7 .form-inline img.ajax-loader {
+		form.init .wpcf7-response-output,
+		form.resetting .wpcf7-response-output,
+		form.submitting .wpcf7-response-output {
+			display: none;
+		}
+
+		.wpcf7 .form-inline img.ajax-loader {
 			display: inline;
 		}
 
-		div.wpcf7 .ajax-loader {
+		.wpcf7 .ajax-loader {
 			visibility: hidden;
 			display: inline-block;
 			background-image: url('<?php echo $url . '/assets/ajax-loader.gif'; ?>');
@@ -145,46 +151,46 @@ function cf7bs_inline_styles() {
 			vertical-align: middle;
 		}
 
-		div.wpcf7 .ajax-loader.is-active {
+		.wpcf7 form.submitting .ajax-loader {
 			visibility: visible;
 		}
 
-		div.wpcf7 div.ajax-error {
+		.wpcf7 div.ajax-error {
 			display: none;
 		}
 
-		div.wpcf7 .wpcf7-display-none {
+		.wpcf7 .wpcf7-display-none {
 			display: none;
 		}
 
-		div.wpcf7 .placeheld {
+		.wpcf7 .placeheld {
 			color: #888;
 		}
 
-		div.wpcf7 .wpcf7-recaptcha iframe {
+		.wpcf7 .wpcf7-recaptcha iframe {
 			margin-bottom: 0;
 		}
 
-		div.wpcf7 input[type="file"] {
+		.wpcf7 input[type="file"] {
 			cursor: pointer;
 		}
 
-		div.wpcf7 input[type="file"]:disabled {
+		.wpcf7 input[type="file"]:disabled {
 			cursor: default;
 		}
 
-		div.wpcf7 .form-inline .form-group {
+		.wpcf7 .form-inline .form-group {
 			max-width: 250px;
 		}
 
-		div.wpcf7 .input-group-addon img {
+		.wpcf7 .input-group-addon img {
 			height: 100%;
 			width: auto;
 			max-width: none !important;
 			border-radius: 5px;
 		}
 
-		div.wpcf7 .input-group-addon.input-group-has-image {
+		.wpcf7 .input-group-addon.input-group-has-image {
 			padding: 0;
 		}
 	</style>

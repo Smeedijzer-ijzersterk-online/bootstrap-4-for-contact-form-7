@@ -41,7 +41,7 @@
 
 	window.wpcf7.clearResponse = function( form ) {
 		var $form  = $( form );
-		var $close = $form.find( 'div.wpcf7-response-output .close' );
+		var $close = $form.find( '.wpcf7-response-output .close' );
 
 		$form.removeClass( 'invalid spam sent failed' );
 		$form.siblings( '.screen-reader-response' ).html( '' ).attr( 'role', '' );
@@ -57,26 +57,26 @@
 			.removeClass( 'wpcf7-mail-sent-ok wpcf7-mail-sent-ng wpcf7-validation-errors wpcf7-spam-blocked alert-warning alert-success alert-danger' );
 
 		if ( 0 < $close.length ) {
-			$form.find( 'div.wpcf7-response-output' ).append( $close );
+			$form.find( '.wpcf7-response-output' ).append( $close );
 		}
 	};
 
 	// add Bootstrap Alert classes to response output
 	$( function() {
-		$( 'div.wpcf7' ).on( 'invalid.wpcf7', function() {
-			$( this ).find( 'div.wpcf7-response-output' ).addClass( 'alert-warning' );
+		$( '.wpcf7' ).on( 'invalid.wpcf7', function() {
+			$( this ).find( '.wpcf7-response-output' ).addClass( 'alert-warning' );
 		});
-		$( 'div.wpcf7' ).on( 'spam.wpcf7', function() {
-			$( this ).find( 'div.wpcf7-response-output' ).addClass( 'alert-warning' );
+		$( '.wpcf7' ).on( 'spam.wpcf7', function() {
+			$( this ).find( '.wpcf7-response-output' ).addClass( 'alert-warning' );
 		});
-		$( 'div.wpcf7' ).on( 'mailsent.wpcf7', function() {
-			$( this ).find( 'div.wpcf7-response-output' ).addClass( 'alert-success' );
+		$( '.wpcf7' ).on( 'mailsent.wpcf7', function() {
+			$( this ).find( '.wpcf7-response-output' ).addClass( 'alert-success' );
 		});
-		$( 'div.wpcf7' ).on( 'mailfailed.wpcf7', function() {
-			$( this ).find( 'div.wpcf7-response-output' ).addClass( 'alert-danger' );
+		$( '.wpcf7' ).on( 'mailfailed.wpcf7', function() {
+			$( this ).find( '.wpcf7-response-output' ).addClass( 'alert-danger' );
 		});
 
-		$( 'div.wpcf7' ).on( 'click', 'div.wpcf7-response-output .close', function( e ) {
+		$( '.wpcf7' ).on( 'click', '.wpcf7-response-output .close', function( e ) {
 			$( this ).parent().hide();
 			e.preventDefault();
 		});
@@ -126,10 +126,10 @@
 	// WPCF7 Function Override: Adjusted for Bootstrap Alert classes and Status Class
 	$.fn.wpcf7ClearResponseOutput = function() {
 		return this.each(function() {
-			var $close = $( this ).find( 'div.wpcf7-response-output .close' );
-			$( this ).find( 'div.wpcf7-response-output' ).hide().empty().removeClass( 'wpcf7-mail-sent-ok wpcf7-mail-sent-ng wpcf7-validation-errors wpcf7-spam-blocked alert-warning alert-success alert-danger' ).removeAttr( 'role' );
+			var $close = $( this ).find( '.wpcf7-response-output .close' );
+			$( this ).find( '.wpcf7-response-output' ).hide().empty().removeClass( 'wpcf7-mail-sent-ok wpcf7-mail-sent-ng wpcf7-validation-errors wpcf7-spam-blocked alert-warning alert-success alert-danger' ).removeAttr( 'role' );
 			if ( 0 < $close.length ) {
-				$( this ).find( 'div.wpcf7-response-output' ).append( $close );
+				$( this ).find( '.wpcf7-response-output' ).append( $close );
 			}
 			$( this ).find( 'div.form-group' ).removeClass( 'has-error' );
 			$( this ).find( 'span.wpcf7-not-valid-tip' ).remove();
