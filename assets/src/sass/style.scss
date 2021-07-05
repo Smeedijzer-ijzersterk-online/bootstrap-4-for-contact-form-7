@@ -1,3 +1,10 @@
+form.init .wpcf7-response-output,
+form.resetting .wpcf7-response-output,
+form.submitting .wpcf7-response-output {
+	display: none;
+}
+
+
 div.wpcf7 {
 	.screen-reader-response {
 		position: absolute;

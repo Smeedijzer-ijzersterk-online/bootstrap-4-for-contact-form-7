@@ -3,6 +3,12 @@
  * By Felix Arntz (https://leaves-and-love.net)
  * Licensed under GNU General Public License v2 (or later) (http://www.gnu.org/licenses/gpl-2.0.html)
  */
+form.init .wpcf7-response-output,
+form.resetting .wpcf7-response-output,
+form.submitting .wpcf7-response-output {
+	display: none;
+}
+
 div.wpcf7 .screen-reader-response {
 	position: absolute;
 	width: 1px;
@@ -28,7 +34,7 @@ div.wpcf7 .ajax-loader {
 	height: 16px;
 	padding: 0;
 	margin: 0 0 0 4px;
-	vertical-align: middle; 
+	vertical-align: middle;
 	border: none;
 	visibility: hidden;
 }
